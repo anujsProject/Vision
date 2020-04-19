@@ -24,6 +24,7 @@ const moveSlide = (n) => {
 
     slides.forEach((el, i) => {
         el.style.opacity = '0';
+        el.style.visibility = 'hidden';
         el.className = `header__img-item header__img-item--${i + 1}`;
     });
 
