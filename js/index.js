@@ -27,6 +27,9 @@ const moveSlide = (n) => {
         el.style.visibility = 'hidden';
         el.className = `header__img-item header__img-item--${i + 1}`;
     });
+    
+    slides[slideNo - 1].style.opacity = '1';
+    slides[slideNo - 1].style.visibility = 'visible';
 
     current = slideNo;
     next = n;
